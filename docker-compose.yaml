@@ -1,8 +1,8 @@
-version: "3.9"
+name: it-tools
 services:
-  it-tools:
-    image: "corentinth/it-tools:latest"
-    restart: unless-stopped
-    container_name: it-tools
-    ports:
-      - "8080:80"
+    it-tools:
+        image: "ghcr.io/corentinth/it-tools:latest" #From GitHub registry
+        restart: unless-stopped
+        container_name: it-tools
+        ports:
+            - "8080:80"
